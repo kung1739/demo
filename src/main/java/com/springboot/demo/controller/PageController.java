@@ -49,6 +49,17 @@ public class PageController {
 		mav.setViewName("messages/ajaxPage");
 		return mav;
 	}
-
+	
+	@GetMapping("/ajaxMessage2")
+	public ModelAndView viewAjax2(ModelAndView mav) {
+		mav.setViewName("messages/ajaxPage2");
+		return mav;
+	}
+	
+	@GetMapping("/ajaxMessage3")
+	public ModelAndView viewAjax3(ModelAndView mav) {
+		mav.setViewName("messages/ajaxPage3");
+		return mav;
+	}
 
 }
