@@ -92,4 +92,10 @@ public class CustomerAPI {
 	public List<Customer> findByLevel(@RequestParam  Integer level) {
 		return cusDao.findByLevel(level);
 	}
+	
+	// test
+	@GetMapping(value = "customer/level")
+	public List<Customer> findByLevel2(@RequestParam  Integer level) {
+		return cusDao.findByLevel(level);
+	}
 }
